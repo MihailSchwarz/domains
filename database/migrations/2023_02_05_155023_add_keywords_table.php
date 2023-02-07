@@ -13,11 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('domains', function (Blueprint $table) {
+        Schema::create('keywords', function (Blueprint $table) {
             $table->id();
-            $table->string('domain');
-            $table->date('expires_at')->nullable();
-            $table->string('search_query')->nullable();
+            $table->string('keyword');
             $table->integer('position')->nullable();
         });
     }
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('keywords');
     }
 };

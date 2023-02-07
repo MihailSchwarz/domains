@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe33f98a750b8c5a51b30c78bd3fab21",
+    "content-hash": "b1e2c20c1f20cdfde1aab04540ae2304",
     "packages": [
         {
             "name": "brick/math",
@@ -940,6 +940,162 @@
                 }
             ],
             "time": "2022-10-26T14:07:24+00:00"
+        },
+        {
+            "name": "io-developer/php-whois",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/io-developer/php-whois.git",
+                "reference": "ea4cf52832fe8ff56fc4937138467819aa2829c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/io-developer/php-whois/zipball/ea4cf52832fe8ff56fc4937138467819aa2829c1",
+                "reference": "ea4cf52832fe8ff56fc4937138467819aa2829c1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.2",
+                "symfony/polyfill-intl-idn": "^1.27"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Iodev\\": "src/Iodev/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Sedyshev",
+                    "email": "i.o.developer@gmail.com",
+                    "homepage": "https://github.com/io-developer"
+                }
+            ],
+            "description": "PHP WHOIS provides parsed and raw whois lookup of domains and ASN routes. PHP 5.4+ and 7+ compatible ",
+            "homepage": "https://github.com/io-developer/php-whois",
+            "keywords": [
+                "asn",
+                "domain",
+                "info",
+                "lookup",
+                "parser",
+                "php",
+                "query",
+                "routes",
+                "tld",
+                "whois",
+                "црщшы"
+            ],
+            "support": {
+                "issues": "https://github.com/io-developer/php-whois/issues",
+                "source": "https://github.com/io-developer/php-whois/tree/4.1.10"
+            },
+            "time": "2023-01-25T14:42:45+00:00"
+        },
+        {
+            "name": "jeremykendall/php-domain-parser",
+            "version": "6.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeremykendall/php-domain-parser.git",
+                "reference": "bc84e2479c200b03fb429141b2572fd7752d728b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeremykendall/php-domain-parser/zipball/bc84e2479c200b03fb429141b2572fd7752d728b",
+                "reference": "bc84e2479c200b03fb429141b2572fd7752d728b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "ext-intl": "*",
+                "ext-json": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.5.0",
+                "guzzlehttp/guzzle": "^7.0",
+                "guzzlehttp/psr7": "^1.6||^2.0",
+                "phpstan/phpstan": "^1.4.6.",
+                "phpstan/phpstan-phpunit": "^1.0.0",
+                "phpstan/phpstan-strict-rules": "^1.1.0",
+                "phpunit/phpunit": "^9.5.13",
+                "psr/http-factory": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "symfony/cache": "^v5.0 || ^v6.0"
+            },
+            "suggest": {
+                "league/uri": "To parse URL and validate host",
+                "psr/http-client-implementation": "To use the storage functionnality which depends on PSR-18",
+                "psr/http-factory-implementation": "To use the storage functionnality which depends on PSR-17",
+                "psr/simple-cache-implementation": "To use the storage functionnality which depends on PSR-16"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pdp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Kendall",
+                    "homepage": "http://about.me/jeremykendall",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "homepage": "http://nyamsprod.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/jeremykendall/php-domain-parser/graphs/contributors"
+                }
+            ],
+            "description": "Public Suffix List and IANA Root Zone Database based Domain parsing implemented in PHP.",
+            "homepage": "https://github.com/jeremykendall/php-domain-parser",
+            "keywords": [
+                "PSL",
+                "Public Suffix List",
+                "Top Level Domains",
+                "domain parsing",
+                "iana",
+                "icann",
+                "idn",
+                "tld"
+            ],
+            "support": {
+                "issues": "https://github.com/jeremykendall/php-domain-parser/issues",
+                "source": "https://github.com/jeremykendall/php-domain-parser"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-29T05:04:10+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7860,12 +8016,13 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0.2"
+        "php": "^8.0.2",
+        "ext-simplexml": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
