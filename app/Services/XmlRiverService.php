@@ -34,6 +34,17 @@ class XmlRiverService
         'info',
         'co.uk',
         'com.au',
+        'ru',
+        'pro',
+        'aero',
+        'site',
+        'city',
+        'am',
+        'club',
+        'co',
+        'cloud',
+        'asia',
+
     ];
 
     public static function getSerp(Keyword $keyword) {
